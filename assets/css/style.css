@@ -2203,3 +2203,49 @@ textarea.input-field {
   min-width: 40px; /* keeps all numbers aligned */
   font-weight: 600;
 }
+
+/* =========================
+   HONEYCOMB GALLERY
+========================= */
+
+.honeycomb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.hex {
+  width: 180px;
+  height: 200px;
+  position: relative;
+  clip-path: polygon(
+    50% 0%, 
+    100% 25%, 
+    100% 75%, 
+    50% 100%, 
+    0% 75%, 
+    0% 25%
+  );
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+/* Images inside hex */
+.hex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Stagger effect (honeycomb layout) */
+.hex:nth-child(odd) {
+  transform: translateY(30px);
+}
+
+/* Hover effect */
+.hex:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
