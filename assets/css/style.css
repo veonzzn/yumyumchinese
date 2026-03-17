@@ -2167,13 +2167,23 @@ textarea.input-field {
 }
 
 .menu-column {
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.04);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s ease;
+}
+
+.menu-column:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.06);
 }
 
 .menu-column h3 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-weight: 12px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .menu-column ul {
@@ -2182,7 +2192,14 @@ textarea.input-field {
 }
 
 .menu-column li {
+  display: flex;
+  gap: 8px;
   font-size: 14px;
   margin-bottom: 6px;
   opacity: 0.85;
+}
+
+.menu-num {
+  min-width: 40px; /* keeps all numbers aligned */
+  font-weight: 600;
 }
