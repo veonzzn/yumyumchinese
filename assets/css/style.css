@@ -2435,3 +2435,85 @@ textarea.input-field {
   font-size: 14px;
   opacity: 0.8;
 }
+
+
+/* ===============================
+   GALLERY CAROUSEL
+================================ */
+
+.carousel {
+  max-width: 900px;
+  margin: 60px auto 0;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Images */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+/* Subtle zoom effect on active slide */
+.carousel-item.active img {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+
+/* Dark gradient overlay for readability */
+.carousel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.2),
+    transparent
+  );
+  pointer-events: none;
+}
+
+/* Indicators (dots) */
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: var(--gold-crayola);
+  transform: scale(1.3);
+}
+
+/* Arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 1;
+}
+
+/* Arrow icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60%;
+  filter: invert(1);
+}
+
+/* Optional: gold glow on hover */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: rgba(212, 175, 55, 0.2);
+}
