@@ -2287,3 +2287,32 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+/* =========================
+  CUSTOMER REVIEWS
+========================= */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.review-card {
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.review-text {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.review-author {
+  font-size: 14px;
+  opacity: 0.8;
+}
