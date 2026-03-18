@@ -2268,6 +2268,11 @@ textarea.input-field {
   font-weight: 600;
 }
 
+.menu-size-note {
+  font-size: 12px;
+  color: var(--quick-silver);
+  margin-bottom: 8px;
+}
 
 /* =========================
    HONEYCOMB GALLERY
