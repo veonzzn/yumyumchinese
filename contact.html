@@ -213,22 +213,58 @@
   </header>
 
   <main>
-    <section class="hero text-center" aria-label="home" id="home">
-      <div class="container">
-        <form action="action_page.php">
+    <section class="section contact-modern" id="contact">
+      <div class="container contact-grid">
 
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <!-- LEFT: FORM -->
+        <div class="contact-form-box">
+          <p class="label-2 section-subtitle">Contact Us</p>
+          <h2 class="headline-1 section-title">Send Us a Message</h2>
 
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <form action="#" method="POST" class="modern-form">
+            <div class="input-row">
+              <input type="text" name="name" placeholder="Your Name" required class="input-field">
+              <input type="email" name="email" placeholder="Your Email" required class="input-field">
+            </div>
 
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="text" name="subject" placeholder="Subject" class="input-field">
 
-          <input type="submit" value="Submit">
+            <textarea name="message" placeholder="Your Message" required class="input-field textarea"></textarea>
 
-        </form>
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Send Message</span>
+              <span class="text text-2">Send Message</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- RIGHT: INFO -->
+        <div class="contact-info-box">
+          <h3 class="title-1">Visit Us</h3>
+
+          <p class="contact-item">
+            <strong>Address:</strong><br>
+            241 S Green Street,<br>
+            Henderson, KY 42420
+          </p>
+
+          <p class="contact-item">
+            <strong>Phone:</strong><br>
+            <a href="tel:+12709575083">+1 (270) 957-5083</a>
+          </p>
+
+          <p class="contact-item">
+            <strong>Email:</strong><br>
+            <a href="mailto:yumyumchinese888@gmail.com">yumyumchinese888@gmail.com</a>
+          </p>
+
+          <p class="contact-item">
+            <strong>Hours:</strong><br>
+            Mon - Sat: 11:00 AM – 8:00 PM<br>
+            Sunday: Closed
+          </p>
+        </div>
+
       </div>
     </section>
   </main>

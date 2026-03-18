@@ -2259,27 +2259,83 @@ textarea.input-field {
    CONTACT FORM
 ========================= */
 
-/* Styles for input fields and textarea */
-input, textarea {
-    width: 100%; /* Full width of the form container */
-    padding: 10px; /* Space inside the input fields */
-    margin-bottom: 15px; /* Space below each input field */
-    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+.contact-modern {
+  padding: 120px 20px;
+  background-color: #0a0a0a;
 }
 
-/* Styles for the submit button */
-button {
-    background-color: #007bff; /* Blue background color for the button */
-    font-size: 16px; /* Font size of the button text */
-    padding: 10px 20px; /* Space inside the button */
-    border: none; /* Removes the default border */
-    border-radius: 5px; /* Rounded corners for the button */
-    cursor: pointer; /* Pointer cursor on hover */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
 }
 
-/* Hover effect for the button */
-button:hover {
-    background-color: #0056b3; /* Darker blue color when the button is hovered */
+.contact-form-box,
+.contact-info-box {
+  background: #111;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* FORM */
+
+.modern-form .input-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.modern-form .input-field {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #0d0d0d;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+.modern-form .input-field:focus {
+  border-color: var(--gold-crayola);
+}
+
+.textarea {
+  min-height: 140px;
+  resize: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* INFO SIDE */
+
+.contact-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.contact-item a {
+  color: var(--gold-crayola);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modern-form .input-row {
+    flex-direction: column;
+  }
 }
 
 
