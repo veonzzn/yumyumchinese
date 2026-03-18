@@ -1597,6 +1597,66 @@ textarea.input-field {
     border-block: 1px solid var(--white-alpha-20);
   }
 
+  /*-----------------------------------*\
+  #MENU LIST (NUMBERED ITEMS)
+\*-----------------------------------*/
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.08);
+}
+
+/* LEFT SIDE (NUMBER + NAME) */
+.menu-left {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.menu-num {
+  min-width: 45px;
+  color: var(--quick-silver);
+  font-weight: 500;
+}
+
+.menu-name {
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* RIGHT SIDE (PRICES) */
+.menu-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  min-width: 75px;
+}
+
+/* SMALL */
+.price-small {
+  font-size: 12px;
+  color: var(--quick-silver);
+}
+
+/* LARGE (highlighted for upsell) */
+.price-large {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold-crayola);
+}
+
+/* HOVER EFFECT (subtle premium feel) */
+.menu-item:hover {
+  background: rgba(255,255,255,0.03);
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
 
 
   /**
@@ -2207,6 +2267,7 @@ textarea.input-field {
   min-width: 40px; /* keeps all numbers aligned */
   font-weight: 600;
 }
+
 
 /* =========================
    HONEYCOMB GALLERY
