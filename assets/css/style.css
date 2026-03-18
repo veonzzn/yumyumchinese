@@ -184,6 +184,7 @@ body {
   line-height: var(--lineHeight-5);
   overflow: hidden;
   height: 300vh;
+  padding-top: 140px;
 }
 
 body.loaded { overflow: overlay; }
@@ -2260,7 +2261,7 @@ textarea.input-field {
 ========================= */
 
 .contact-modern {
-  padding: 120px 20px;
+  padding: 180px 20px;
   background-color: #0a0a0a;
 }
 
