@@ -2536,8 +2536,6 @@ textarea.input-field {
 
 .scroll-banner p {
   animation: scroll-left 30s linear infinite;
-  padding-left: 100%;
-  display: inline-block;
 }
 
 @keyframes scroll-left {
