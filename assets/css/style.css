@@ -2313,10 +2313,11 @@ textarea.input-field {
 .special-note {
   font-size: 13px;
   opacity: 0.7;
+  margin-bottom: 5px;
 }
 
 .special-includes {
-  margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 14px;
   opacity: 0.8;
 }
@@ -2326,6 +2327,13 @@ textarea.input-field {
   margin-top: 15px;
   font-weight: bold;
   color: #d4af37;
+}
+
+.special-instructions {
+  margin-top: 15px;
+  font-size: 13px;
+  font-style: italic;
+  opacity: 0.7;
 }
 
 /* Mobile */
