@@ -2535,14 +2535,16 @@ textarea.input-field {
 }
 
 .scroll-banner p {
-  animation: scroll-right 35s linear infinite;
+  animation: scroll-left 30s linear infinite;
+  padding-left: 100%;
+  display: inline-block;
 }
 
-@keyframes scroll-right {
+@keyframes scroll-left {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
