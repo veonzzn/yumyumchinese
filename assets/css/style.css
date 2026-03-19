@@ -2535,7 +2535,7 @@ textarea.input-field {
 }
 
 .scroll-banner p {
-  animation: scroll-right 15s linear infinite;
+  animation: scroll-right 35s linear infinite;
 }
 
 @keyframes scroll-right {
