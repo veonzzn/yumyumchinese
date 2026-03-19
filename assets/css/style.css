@@ -2518,6 +2518,11 @@ textarea.input-field {
   background: rgba(212, 175, 55, 0.2);
 }
 
+.carousel-item:nth-child(3) img,
+.carousel-item:nth-child(8) img {
+  object-position: center 20%; /* move frame upward */
+}
+
 
 /* ===============================
    Spinning Text
