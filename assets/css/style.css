@@ -2274,6 +2274,67 @@ textarea.input-field {
   margin-bottom: 8px;
 }
 
+.menu-specials {
+  background-color: #111;
+  padding: 80px 0;
+}
+
+.specials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.special-card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s ease;
+}
+
+.special-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4af37; /* gold accent */
+}
+
+.special-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.special-card li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.special-note {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.special-includes {
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.special-price {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .specials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* =========================
    HONEYCOMB GALLERY
 ========================= */
