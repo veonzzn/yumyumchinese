@@ -2525,29 +2525,22 @@ textarea.input-field {
 ================================ */
 
 .scroll-banner {
-  width: 100%;
-  overflow: hidden;
-  background: #111;
-  color: var(--gold-crayola);
-  padding: 10px 0;
-  white-space: nowrap;
-  position: relative;
-  font-weight: bold;
-  letter-spacing: 1px;
+  background: linear-gradient(90deg, #000, #1a1a1a, #000);
+  border-top: 1px solid var(--gold-crayola);
+  border-bottom: 1px solid var(--gold-crayola);
+  font-family: 'Forum', serif;
+  font-size: 14px;
 }
 
 .scroll-banner p {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-left 15s linear infinite;
+  animation: scroll-right 15s linear infinite;
 }
 
-/* Right → Left */
-@keyframes scroll-left {
+@keyframes scroll-right {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
