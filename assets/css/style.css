@@ -1067,6 +1067,11 @@ body.nav-active { overflow: hidden; }
   border-radius: var(--radius-24);
 }
 
+.menu-card .card-title {
+  flex: 1;                /* take available space */
+  margin: 0;              /* remove extra spacing */
+}
+
 .menu-card .card-title { transition: var(--transition-1); }
 
 .menu-card .card-title:is(:hover, :focus-visible) { color: var(--gold-crayola); }
@@ -1090,6 +1095,12 @@ body.nav-active { overflow: hidden; }
 .menu-card .card-text {
   color: var(--quick-silver);
   line-height: var(--lineHeight-4);
+}
+
+.menu-price {
+  white-space: nowrap;                  /* prevents line breaks for price */
+  color: var(--gold-crayola);
+  font-weight: var(--weight-bold);
 }
 
 .menu-text .span {
@@ -1596,7 +1607,7 @@ textarea.input-field {
     border-block: 1px solid var(--white-alpha-20);
   }
 
-  /*-----------------------------------*\
+/*-----------------------------------*\
   #MENU LIST (NUMBERED ITEMS)
 \*-----------------------------------*/
 
@@ -1612,10 +1623,13 @@ textarea.input-field {
 .menu-left {
   display: flex;
   gap: 10px;
+  flex: 1;                    /* take remaining space */
   align-items: flex-start;
+  flex-wrap: wrap;            /* wrap name if too long */
 }
 
 .menu-num {
+  flex-shrink: 0;      /* number doesn't shrink */
   min-width: 45px;
   color: var(--quick-silver);
   font-weight: 500;
@@ -1628,11 +1642,13 @@ textarea.input-field {
 
 /* RIGHT SIDE (PRICES) */
 .menu-price {
+  flex-shrink: 0;          /* price doesn't shrink */
+  min-width: 75px;
+  text-align: right;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  text-align: right;
-  min-width: 75px;
+  white-space: nowrap;     /* prevent price from breaking */
 }
 
 /* SMALL */
@@ -1653,6 +1669,7 @@ textarea.input-field {
   background: rgba(255,255,255,0.03);
   padding-left: 6px;
   padding-right: 6px;
+  padding-inline: 6px;
   border-radius: 6px;
   transition: 0.2s ease;
 }
@@ -2390,6 +2407,35 @@ textarea.input-field {
     top: 40px; /* keep it under topbar ALWAYS */
   }
 }
+
+/*-----------------------------------*\
+  #MENU MOBILE RESPONSIVE
+\*-----------------------------------*/
+
+@media (max-width: 600px) {
+  .menu-item {
+    flex-direction: column;        /* stack number/name and price */
+    align-items: flex-start;       /* left-align everything */
+    padding: 8px 0;
+  }
+
+  .menu-left {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .menu-price {
+    text-align: left;              /* price moves below name */
+    min-width: auto;
+    margin-top: 4px;               /* small spacing from name */
+    align-self: flex-start;
+  }
+
+  .menu-num {
+    min-width: 35px;               /* slightly smaller on mobile */
+  }
+}
+
 
 /* =========================
    HONEYCOMB GALLERY
