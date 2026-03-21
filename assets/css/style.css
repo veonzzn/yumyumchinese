@@ -325,8 +325,8 @@ body.nav-active { overflow: hidden; }
 .section-subtitle::after {
   content: url('../images/orange.png');
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   margin: 5px auto 0;
 }
 
@@ -920,7 +920,7 @@ body.nav-active { overflow: hidden; }
   height: 100%;
   background-image: url('../images/orange.png');
   background-position: center;
-  background-size: 60px;
+  background-size: 30px;
   background-repeat: repeat;
   transition: var(--transition-2);
   transition-delay: 0;
@@ -943,7 +943,7 @@ body.nav-active { overflow: hidden; }
   position: relative;
   background-color: var(--eerie-black-2);
   background: url('./assets/images/orange.png') no-repeat center center;
-  background-size: 80px;
+  background-size: 30px;
   padding: 80px 0;
   overflow: hidden;
   border-radius: 24px;
