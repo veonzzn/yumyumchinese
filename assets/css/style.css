@@ -2353,7 +2353,15 @@ textarea.input-field {
     grid-template-columns: 1fr;
   }
 
+  body {
+    padding-top: 100px; /* topbar + header combined */
+  }
+
   .topbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
     padding: 8px 10px;
     text-align: center;
   }
@@ -2371,6 +2379,15 @@ textarea.input-field {
   .topbar-item .span {
     font-size: 11px;
     line-height: 1.2;
+  }
+
+  .header {
+    top: 40px;
+    z-index: 999;
+  }
+
+  .header.active {
+    top: 40px; /* keep it under topbar ALWAYS */
   }
 }
 
