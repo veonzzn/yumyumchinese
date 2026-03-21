@@ -921,7 +921,7 @@ body.nav-active { overflow: hidden; }
   background-image: url('../images/orange.png');
   background-position: center;
   background-size: 30px;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   transition: var(--transition-2);
   transition-delay: 0;
   z-index: -1;
