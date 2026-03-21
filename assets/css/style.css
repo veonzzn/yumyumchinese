@@ -657,7 +657,7 @@ body.nav-active { overflow: hidden; }
 
 .navbar {
   position: fixed;
-  background-color: var(--smoky-black-1);
+  background-color: transparent;
   top: 0;
   left: -360px;
   bottom: 0;
