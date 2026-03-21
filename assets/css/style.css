@@ -323,7 +323,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .section-subtitle::after {
-  content: url('../images/categories-bg.jpg');
+  content: url('../images/orange.png');
   display: block;
   width: 100px;
   margin-inline: auto;
