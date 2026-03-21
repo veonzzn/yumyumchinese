@@ -1483,7 +1483,7 @@ textarea.input-field {
     top: 0;
     left: 0;
     width: 100%;
-    padding-block: 10px;
+    padding-block: 6px;
     border-block-end: 1px solid var(--white-alpha-20);
     z-index: 5;
     transition: var(--transition-1);
@@ -1505,7 +1505,7 @@ textarea.input-field {
 
   .topbar .container {
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
   }
 
   .topbar-item { gap: 6px; }
@@ -2370,6 +2370,7 @@ textarea.input-field {
 
   .topbar-item .span {
     font-size: 11px;
+    line-height: 1.2;
   }
 }
 
