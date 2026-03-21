@@ -183,8 +183,7 @@ body {
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-5);
   overflow: hidden;
-  height: 300vh;
-  padding-top: 200px;
+  padding-top: 120px;
 }
 
 body.loaded { overflow: overlay; }
@@ -633,7 +632,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .nav-open-btn {
-  padding: 12px;
+  padding: 8px;
   padding-inline-end: 0;
 }
 
@@ -1718,9 +1717,21 @@ textarea.input-field {
     grid-column: 1 / 3;
     width: calc(50% - 20px);
     margin-inline: auto;
+
   }
 
+  .header {
+    top: 60px; /* smaller topbar */
+    padding-block: 15px;
+  }
 
+  .header .container {
+    padding-inline: 12px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
 
   /**
    * HEADER
@@ -2341,6 +2352,25 @@ textarea.input-field {
   .specials-grid {
     grid-template-columns: 1fr;
   }
+
+  .topbar {
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  .topbar .container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .topbar-item {
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .topbar-item .span {
+    font-size: 11px;
+  }
 }
 
 /* =========================
@@ -2604,11 +2634,16 @@ textarea.input-field {
   border-bottom: 1px solid var(--gold-crayola);
   font-family: 'Forum', serif;
   font-size: 14px;
-  position: relative;
-  z-index: 10;
+  position: sticky;
+  z-index: 3;
+  margin-top: 120px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .scroll-banner p {
+  display: inline-block;
+  padding-left: 100%;
   animation: scroll-left 30s linear infinite;
 }
 
