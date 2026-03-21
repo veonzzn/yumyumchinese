@@ -183,7 +183,7 @@ body {
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-5);
   overflow: hidden;
-  padding-top: 120px;
+  padding-top: 0;
 }
 
 body.loaded { overflow: overlay; }
@@ -601,12 +601,12 @@ body.nav-active { overflow: hidden; }
 .header .btn { display: none; }
 
 .header {
-  position: fixed;
-  top: 80px;
+  position: relative;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: var(--eerie-black-4);
-  padding-block: 40px;
+  padding-block: 15px;
   z-index: 4;
   border-block-end: 1px solid transparent;
   transition: var(--transition-1);
@@ -1479,7 +1479,7 @@ textarea.input-field {
 
   .topbar {
     display: block;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -2358,7 +2358,7 @@ textarea.input-field {
   }
 
   .topbar {
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 1000;
     width: 100%;
@@ -2652,9 +2652,9 @@ textarea.input-field {
   border-bottom: 1px solid var(--gold-crayola);
   font-family: 'Forum', serif;
   font-size: 14px;
-  position: sticky;
-  z-index: 3;
-  margin-top: 120px;
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
   overflow: hidden;
   white-space: nowrap;
 }
