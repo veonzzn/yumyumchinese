@@ -2269,7 +2269,7 @@ textarea.input-field {
    * Menu
    */
 
-.menu-grid {
+/* .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
@@ -2307,7 +2307,7 @@ textarea.input-field {
   font-size: 14px;
   margin-bottom: 6px;
   opacity: 0.85;
-}
+} */
 
 .menu-num {
   min-width: 40px; /* keeps all numbers aligned */
