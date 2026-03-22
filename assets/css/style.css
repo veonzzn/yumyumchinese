@@ -2644,18 +2644,16 @@ textarea.input-field {
 /* Subtle zoom effect on active slide */
 .carousel-item.active img {
   transform: scale(1.05);
-  filter: brightness(1);
+  filter: none;
 }
 
 /* Dark gradient overlay for readability */
 .carousel::after {
   content: "";
-  position: absolute;
-  inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.1),
     transparent
   );
   pointer-events: none;
