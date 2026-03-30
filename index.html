@@ -1092,13 +1092,44 @@
   </main>
 
   <div class="award-container">
-    <link href="https://awards.infcdn.net/2024/r_gold.css" rel="stylesheet"/>
+    <link href="https://awards.infcdn.net/2024/circle_v2.css" rel="stylesheet"/>
 
-    <div id="b-gold" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.b-gold_r-link').href);return 0;}">
-      <a href="https://restaurantguru.com/Yum-Yum-Chinese-Restaurant-Henderson-Kentucky" class="b-gold_r-link" target="_blank">Yum Yum Chinese Restaurant</a>
-      <p class="b-gold_center">Best chinese restaurant</p>
-      <a href="https://restaurantguru.com" class="b-gold__link" target="_blank">Restaurant Guru</a>
-      <p class="b-gold_year">2025</p>
+    <div id="circle-r-ribbon" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.r-ribbon_title').href);return 0;}">
+      
+      <div class="r-ribbon_ahead">
+        <svg xmlns="http://www.w3.org/2000/svg" width="160px" height="160px" viewBox="0 0 160 160">
+          <defs>
+            <path id="heading-arc" d="M 30 80 a 50 50 0 1 1 100 0"></path>
+          </defs>
+          <text class="r-ribbon_ahead-heading f9" fill="#000" text-anchor="middle">
+            <textPath startOffset="50%" href="#heading-arc">
+              Best chinese restaurant
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <p class="r-ribbon_year">2025</p>
+
+      <a href="https://restaurantguru.com/Yum-Yum-Chinese-Restaurant-Henderson-Kentucky"
+        class="r-ribbon_title f10"
+        target="_blank">
+        Yum Yum Chinese Restaurant
+      </a>
+
+      <div class="r-ribbon_ahead r-ribbon_ahead-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" width="120px" height="120px" viewBox="0 0 120 120">
+          <defs>
+            <path id="subheading-arc" d="M 12 60 a 48 48 0 0 0 96 0"></path>
+          </defs>
+          <text class="r-ribbon_ahead-subh" fill="#000" text-anchor="middle">
+            <textPath startOffset="50%" href="#subheading-arc">
+              Restaurant Guru
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
     </div>
   </div>
 

@@ -2741,4 +2741,8 @@ textarea.input-field {
 .award-container {
   all: initial;
   display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
 }
