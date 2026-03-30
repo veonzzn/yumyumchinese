@@ -2737,3 +2737,8 @@ textarea.input-field {
     transform: translateX(-100%);
   }
 }
+
+.award-container {
+  all: initial;
+  display: inline-block;
+}
