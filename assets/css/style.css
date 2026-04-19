@@ -1329,7 +1329,38 @@ textarea.input-field {
   margin-block-start: 40px;
 }
 
+.event .grid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
 
+.event .grid-list li:last-child {
+  grid-column: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .event .grid-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .event .grid-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .event .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 
 
