@@ -410,7 +410,8 @@ body.nav-active { overflow: hidden; }
 
 .grid-list {
   display: grid;
-  gap: 40px;
+  grid-template-columns: repeat(5, 1 fr);
+  gap: 20px;
 }
 
 .hover\:shine { position: relative; }
@@ -1746,8 +1747,6 @@ textarea.input-field {
    * REUSED STYLE
    */
 
-  .grid-list { grid-template-columns: 1fr 1fr; }
-
   :is(.service, .event) .container { max-width: 820px; }
 
   :is(.service, .event) .grid-list li:last-child {
@@ -1865,8 +1864,6 @@ textarea.input-field {
    */
 
   :is(.service, .event) .container { max-width: unset; }
-
-  /* :is(.service, .event) .grid-list { grid-template-columns: repeat(3, 1fr); } */
 
   :is(.service, .event) .grid-list li:last-child {
     grid-column: auto;
@@ -2761,12 +2758,13 @@ textarea.input-field {
 }
 
 /* FORCE 5 CARDS IN ONE ROW */
-.service .grid-list {
-  grid-template-columns: repeat(5, 1fr);
+.section.service .grid-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) !important;
   gap: 30px;
 }
 
-/* Make sure no item stretches weirdly */
-.service .grid-list li {
+/* Prevent weird stretching */
+.section.service .grid-list li {
   width: 100%;
 }
