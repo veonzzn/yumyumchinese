@@ -2758,15 +2758,3 @@ textarea.input-field {
 #circle-r-ribbon:hover {
   transform: scale(1);
 }
-
-/* FORCE 5 CARDS IN ONE ROW */
-.section.service .grid-list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr) !important;
-  gap: 30px;
-}
-
-/* Prevent weird stretching */
-.section.service .grid-list li {
-  width: 100%;
-}
