@@ -1866,7 +1866,7 @@ textarea.input-field {
 
   :is(.service, .event) .container { max-width: unset; }
 
-  :is(.service, .event) .grid-list { grid-template-columns: repeat(3, 1fr); }
+  /* :is(.service, .event) .grid-list { grid-template-columns: repeat(3, 1fr); } */
 
   :is(.service, .event) .grid-list li:last-child {
     grid-column: auto;
@@ -2758,4 +2758,15 @@ textarea.input-field {
 
 #circle-r-ribbon:hover {
   transform: scale(1);
+}
+
+/* FORCE 5 CARDS IN ONE ROW */
+.service .grid-list {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+/* Make sure no item stretches weirdly */
+.service .grid-list li {
+  width: 100%;
 }
