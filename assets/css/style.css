@@ -2743,11 +2743,19 @@ textarea.input-field {
 }
 
 .award-container {
-  all: initial;
-  display: inline-block;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 20px;
+  background: #0a0a0a; /* matches your dark theme */
+}
+
+#circle-r-ribbon {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+#circle-r-ribbon:hover {
+  transform: scale(1);
 }
