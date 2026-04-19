@@ -1256,7 +1256,13 @@ textarea.input-field {
 
 .features .section-title { margin-block-end: 40px; }
 
-.feature-card { padding: 30px 20px 40px; }
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px 20px 40px;
+  text-align: left;
+}
 
 .feature-item:nth-child(2n+1) .feature-card { background-color: var(--eerie-black-3); }
 
@@ -1277,7 +1283,9 @@ textarea.input-field {
   line-height: var(--lineHeight-6);
 }
 
-
+.card-content {
+  flex: 1;
+}
 
 
 
